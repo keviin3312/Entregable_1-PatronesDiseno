@@ -75,7 +75,7 @@ public class CajeroATM {
         return req.notas;
     }
 
-    /* ====== Demo ====== */
+    /* ====== Demo ====.== */
     public static void main(String[] args) {
         int monto = 420_000; // prueba
         Map<Integer, Integer> resultado = dispensar(monto);
