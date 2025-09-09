@@ -1,5 +1,6 @@
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 /* ====== Contrato del manejador ====== */
 interface Dispensador {
@@ -77,10 +78,13 @@ public class CajeroATM {
 
     /* ====== Demo ====.== */
     public static void main(String[] args) {
-        int monto = 420_000; // prueba
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Insertar Monto de dinero a Retirar: ");
+        int monto = sc.nextInt();
+        // int monto = 420_000; // prueba
         Map<Integer, Integer> resultado = dispensar(monto);
 
-        System.out.println("Monto: " + monto);
+        System.out.println("Monto ingresado: " + monto);
         resultado.forEach((denom, cant) ->
             System.out.println("Billetes de " + denom + ": " + cant)
         );
