@@ -1,6 +1,6 @@
 package Dispensadores;
 
-// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+
 abstract class BaseDispensador implements Dispensador {
    protected Dispensador next;
    protected final int denominacion;
