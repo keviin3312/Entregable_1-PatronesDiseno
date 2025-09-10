@@ -11,7 +11,7 @@ interface Dispensador {
 /* ====== Request que viaja por la cadena ====== */
 class DispenseRequest {
     int amount;  // monto restante por dispensar
-    final Map<Integer, Integer> notas = new LinkedHashMap<>(); // denom -> cantidad
+    final Map<Integer, Integer> notas = new LinkedHashMap<>(); 
 
     DispenseRequest(int amount) { this.amount = amount; }
 }
@@ -19,7 +19,7 @@ class DispenseRequest {
 /* ====== Manejador base (boilerplate) ====== */
 abstract class BaseDispensador implements Dispensador {
     protected Dispensador next;
-    protected final int denominacion; // p. ej. 100000, 50000, etc.
+    protected final int denominacion; //  100000, 50000, etc.
 
     protected BaseDispensador(int denominacion) {
         this.denominacion = denominacion;
